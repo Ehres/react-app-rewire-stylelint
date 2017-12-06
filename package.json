@@ -1,0 +1,24 @@
+{
+  "name": "react-app-rewire-stylelint",
+  "version": "0.1.0",
+  "description": "Add stylelint-webpack-plugin to a react-app-rewired config.",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ehres/react-app-rewire-stylelint.git"
+  },
+  "keywords": ["webpack", "react-app-rewired", "stylelint"],
+  "author": "Maxime Grébauval",
+  "license": "MIT",
+  "homepage": "https://github.com/Ehres/react-app-rewire-stylelint",
+  "dependencies": {
+    "webpack": "^3.6.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^8.3.1",
+    "stylelint-webpack-plugin": "^0.9.0"
+  }
+}
