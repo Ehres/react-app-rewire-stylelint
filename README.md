@@ -23,14 +23,15 @@ const rewireStylelint = require('react-app-rewire-stylelint');
 /* config-overrides.js */
 module.exports = function override(config, env) {
   config = rewireStylelint(config, env);
-  // with stylelint options
-  // config = rewireStylelint(config, env, {
+  // with override localIdentName
+  // config = rewireCSSModules.withLoaderOptions({
   //   configBasedir: srcPath,
   //   allowEmptyInput: true,
   //   context: srcPath,
   //   files: ['**/*.css', '**/*.scss'],
   //   emitErrors: false
-  // });
+  // })(config, env);
+  // ...
   return config;
 }
 ```
