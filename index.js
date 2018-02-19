@@ -1,14 +1,18 @@
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
-function createRewireStylelint(options = {}) {
-  return function(config, env) {
+const createRewireStylelint = function (opts = {}) {
+  return function (config, env, options) {
+    if (typeof options === 'undefined') {
+      options = opts;
+    }
+
     config.plugins = (config.plugins || []).concat([
-      new StyleLintPlugin(options)
+      new StyleLintPlugin(options),
     ]);
 
     return config;
   };
-}
+};
 
 const rewireStylelint = createRewireStylelint();
 
