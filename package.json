@@ -1,6 +1,6 @@
 {
   "name": "react-app-rewire-stylelint",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Add stylelint-webpack-plugin to a react-app-rewired config.",
   "main": "index.js",
   "files": [
